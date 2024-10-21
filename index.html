@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Số Đánh Giá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ramdom câu hỏi trắc nghiệm</h1>
+        <p>Người làm : Đinh Văn Hoàng Lân</p>
+
+        <div class="flex-container">
+
+            <div class="input-section">
+
+                <input type="number" id="limitInput" placeholder="Nhập giới hạn số..." class="input-number">
+                <button id="setLimitButton" class="btn">Thiết lập giới hạn</button>
+
+                <p id="result">Chưa có dữ liệu</p>
+
+                <!-- Nút random số -->
+                <button id="randomButton" class="btn" disabled>Random Số</button>
+
+                <!-- Nút đánh giá đúng hoặc sai -->
+                <div id="ratingButtons" style="display:none;">
+                    <button id="correctButton" class="btn">Đúng</button>
+                    <button id="incorrectButton" class="btn">Sai</button>
+                </div>
+            </div>
+
+            <!-- Cột 2: Bảng đánh giá -->
+            <div class="table-section">
+                <table id="numberTable">
+                    <thead>
+                        <tr>
+                            <th>Số</th>
+                            <th>Đánh giá </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
